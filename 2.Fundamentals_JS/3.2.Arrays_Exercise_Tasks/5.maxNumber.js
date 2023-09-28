@@ -1,12 +1,12 @@
 function maxNumber(array){
     let maxValue = array[array.length - 1];
-    let result = '';
-    for(let i = array.length - 1; i >= 0; i--){
+    let result = String(maxValue);
+    for(let i = array.length - 2; i >= 0; i--){
         if(array[i] > maxValue){
-            result = 
+            result = array[i] + ' ' + result;
             maxValue = array[i];
         }
     }
-    console.log(result.join(' '));
+    console.log(result);
 }
-maxNumber([1, 4, 3, 2])
+maxNumber([14, 24, 3, 19, 15, 17])
