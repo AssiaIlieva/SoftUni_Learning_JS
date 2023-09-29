@@ -2,7 +2,6 @@ function mergeArrays(arr1, arr2) {
   let arrayLength = arr1.length;
   let result = [];
 
-        result[i] = arr1[i] + arr2[i];
   for (let i = 0; i < arrayLength; i++) {
     if (i % 2 == 0) {
       result[i] = Number(arr1[i]) + Number(arr2[i]);
