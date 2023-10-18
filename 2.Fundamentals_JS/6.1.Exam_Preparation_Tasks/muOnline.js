@@ -8,16 +8,12 @@ function muOnline(input) {
     let action = newComand[0];
     let num = Number(newComand[1]);
     if (action === "potion") {
-      health += num;
-      if (health <= 100) {
-        console.log(`You healed for ${num} hp.`);
-        console.log(`Current health: ${health} hp.`);
-      } else {
-        let hp = 100 - (health - num);
-        health = 100;
-        console.log(`You healed for ${hp} hp.`);
-        console.log(`Current health: ${health} hp.`);
+      if (health + num > 100) {
+        num = 100 - health;
       }
+      health += num;
+      console.log(`You healed for ${num} hp.`);
+      console.log(`Current health: ${health} hp.`);
     } else if (action === "chest") {
       bitcoins += num;
       console.log(`You found ${num} bitcoins.`);
