@@ -3,7 +3,7 @@ function matchFullName(names) {
   
   let validNames = [];
   while((validName = pattern.exec(names)) !== null){
-    console.log(validName);
+  
     validNames.push(validName[0])
   }
   console.log(validNames.join(" "));
