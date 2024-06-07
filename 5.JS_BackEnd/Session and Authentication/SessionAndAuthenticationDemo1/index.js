@@ -1,9 +1,43 @@
 const express = require('express');
+const cookieParser = require('cookie-parser')
 
 const app = express();
 
+app.use(express.urlencoded ({extended: false}));
+app.use(cookieParser());
+
+
 app.get('/', (req, res) => {
-    res.send('<h1>Hello world,</h1>')
+    const user = req.cookies['user'];
+
+    if(user){
+        res.send(`Hello ${user}`)
+    }else{
+
+        res.send('Please Login')
+    }
+});
+
+app.get('/login', (req, res) => {
+    res.send(`
+    <form action="/login" method="post">
+    <label for="username">Username</label>
+    <input type="text" name="username">
+    <label for="password">password</label>
+    <input type="password" name="password">
+    <input type="submit" value="login">
+</form>
+        `);
+});
+
+app.post('/login', (req, res) => {
+    res.cookie('user', req.body.username);
+    res.end();
+})
+
+app.get('/logout', (req, res) =>{
+    res.clearCookie('user');
+    res.end();
 })
 
 
