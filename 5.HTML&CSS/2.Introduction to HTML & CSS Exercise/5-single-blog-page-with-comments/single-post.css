@@ -1,0 +1,7 @@
+.post-comment {
+  background-color: rgb(202, 198, 198);
+  color: rgb(96, 159, 96);
+}
+.post-comment article:nth-last-of-type(2) {
+  color: cornflowerblue;
+}
