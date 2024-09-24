@@ -1,0 +1,42 @@
+body {
+  background-color: #ebebeb;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body a {
+  color: inherit;
+  text-decoration: none;
+}
+.card {
+  width: 30%;
+  margin: 30px auto;
+  border-radius: 5px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  overflow: hidden;
+  background-color: white;
+}
+.img-container img {
+  width: 100%;
+}
+.main-container h2 {
+  margin: 0px;
+  font-size: 1rem;
+}
+.main-container {
+  padding: 10px 20px;
+}
+footer p {
+  margin: 0px;
+}
+.f-bold {
+  font-weight: 600;
+}
+.f-italic {
+  font-style: italic;
+}
+.limit-lines {
+  width: 100%; /* Ширината ще е 100% от контейнера */
+  white-space: nowrap; /* Текстът ще остане на един ред */
+  overflow: hidden; /* Скрива съдържанието, което не се побира */
+  text-overflow: ellipsis; /* Добавя многоточие в края */
+}
