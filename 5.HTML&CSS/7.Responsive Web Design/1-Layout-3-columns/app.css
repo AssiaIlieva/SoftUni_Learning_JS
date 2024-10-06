@@ -60,7 +60,7 @@ footer::before {
   }
 }
 
-@media (max-width: 610px) {
+@media print, (max-width: 610px) {
   .columns {
     padding: 10px 15px;
   }
