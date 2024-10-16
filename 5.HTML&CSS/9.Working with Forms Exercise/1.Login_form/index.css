@@ -19,3 +19,20 @@ body {
   padding: 30px;
   border-radius: 3px;
 }
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+legend {
+  font-weight: 900;
+  border-bottom: 1px solid silver;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
