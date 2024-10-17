@@ -9,4 +9,133 @@ a {
 }
 body {
   background-color: silver;
+  position: relative;
+}
+.topBar {
+  background-color: rgb(9, 93, 172);
+  color: #fff;
+}
+.socialIcon {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  max-width: 100px;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px 0 50px 0;
+}
+.mainNav {
+  max-width: 80%;
+  display: flex;
+  gap: 40px;
+  border-radius: 30px;
+  align-items: center;
+  position: absolute;
+  background-color: #fff;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+}
+.mainNav nav {
+  padding: 10px;
+}
+.mainNav nav > ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.heroSection {
+  min-height: 450px;
+  background-image: url('spaceImage.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.mainNav h1 {
+  color: rgb(9, 9, 104);
+  font-family: 'Lumanosimo', cursive;
+}
+.primaryBtn {
+  background-color: rgb(9, 9, 50);
+  width: max-content;
+  margin: 0 auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+.primaryBtn:hover {
+  background-color: lightskyblue;
+}
+.mobileTogglerCheckbox,
+.mobileToggler {
+  display: none;
+}
+.subMenu {
+  display: none;
+}
+.mainNav > ul > li {
+  position: relative;
+}
+li:hover > .subMenu {
+  display: block;
+  position: absolute;
+  background-color: none;
+  color: #fff;
+  padding: 10px;
+  gap: 10px;
+  flex-direction: column;
+  list-style: none;
+}
+@media screen and (max-width: 610px) {
+  .mobileToggler {
+    display: block;
+  }
+  .mainNav {
+    width: 80%;
+  }
+  .fa-xmark {
+    display: none;
+  }
+  .mainNav > nav {
+    display: none;
+    position: absolute;
+
+    top: 60px;
+    width: 100%;
+    left: 0;
+    border-radius: 30px;
+  }
+  .mainNav nav > ul {
+    flex-direction: column;
+    gap: 5px;
+    background-color: none;
+    color: white;
+    position: absolute;
+    /* top: 35px; */
+    left: -10px;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  .mainNav nav > ul li:hover {
+    color: lightskyblue;
+  }
+  .mobileTogglerCheckbox:checked ~ nav {
+    display: block;
+  }
+  .mobileTogglerCheckbox:checked ~ label > .fa-xmark {
+    display: block;
+  }
+  .mobileTogglerCheckbox:checked ~ label > .fa-bars {
+    display: none;
+  }
+  .mobileToggler {
+    cursor: pointer;
+  }
 }

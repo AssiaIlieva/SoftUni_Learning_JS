@@ -3,11 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lumanosimo&display=swap"
+      rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="index.css" />
     <title>Header Demo</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="topBar">
+        <ul class="socialIcon">
+          <li>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://tiktok.com" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mainNav">
+        <input
+          type="checkbox"
+          id="mobileMenuToggler"
+          class="mobileTogglerCheckbox" />
+        <label for="mobileMenuToggler" class="mobileToggler"
+          ><i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        <h1>
+          <a href="#"><span class="fancyLetter">S</span>PACE</a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="/about">About</a></li>
+            <li>
+              <a href="/servises">Services</a>
+              <ul class="subMenu">
+                <li><a href="#">Travel to the Moon</a></li>
+                <li><a href="#"></a>Travel to the Mars</li>
+                <li><a href="#">Travel to the Sun</a></li>
+              </ul>
+            </li>
+            <li><a href="/contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="heroSection">
+        <h1>Best Site About Space</h1>
+        <h2>Founded in 2024 by SoftUni Students</h2>
+        <a href="#" class="primaryBtn">Learn More</a>
+      </div>
+    </main>
+  </body>
 </html>
