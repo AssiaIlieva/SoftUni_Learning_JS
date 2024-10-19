@@ -38,3 +38,13 @@ header {
   font-size: 1.2rem;
   font-weight: 700;
 }
+.heroSection {
+  position: relative;
+}
+.imageWrapper {
+  background-color: #1db954;
+}
+.imageWrapper img {
+  width: 45%;
+  /* position: absolute; */
+}
