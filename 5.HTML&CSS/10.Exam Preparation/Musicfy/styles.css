@@ -127,3 +127,30 @@ header {
   background-color: silver;
   top: 8px;
 }
+.dogopal {
+  width: calc(100% - 110px);
+  margin-left: 60px;
+  display: flex;
+
+  gap: 70px;
+  align-items: center;
+}
+.dogopalContent {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dogopalImg {
+  flex: 1 0;
+  padding: 0 30px;
+}
+.dogopalImg img {
+  max-width: 80%;
+  width: 80%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
