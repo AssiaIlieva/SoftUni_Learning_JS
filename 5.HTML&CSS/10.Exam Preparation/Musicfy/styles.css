@@ -60,7 +60,7 @@ header {
 .prices {
   width: 1000px;
   margin: auto;
-  padding: 40px 0;
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
@@ -73,7 +73,7 @@ header {
   flex: 0 0 100%;
 }
 .singlePrice {
-  flex: 0 0 calc(50% - 110px);
+  flex: 0 0 calc(50% - 80px);
   background-color: #fff;
   border-radius: 10px;
   padding: 15px 0 0 0;
@@ -128,6 +128,7 @@ header {
   top: 8px;
 }
 .dogopal {
+  margin-top: 50px;
   width: calc(100% - 110px);
   margin-left: 60px;
   display: flex;
@@ -153,4 +154,46 @@ main {
   display: flex;
   flex-direction: column;
   gap: 80px;
+}
+.compareMe {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.compareMe h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.comparison {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: #cccbcb;
+  border-radius: 5px;
+  align-items: center;
+  overflow: hidden;
+}
+.compareRow {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  align-content: space-between;
+}
+
+.compareRow span {
+  flex: 0 0 75%;
+}
+.imgGroup {
+  display: flex;
+  gap: 110px;
+  padding-left: 30px;
+}
+.compareRow:nth-of-type(even) {
+  background-color: #81d8a0;
 }
