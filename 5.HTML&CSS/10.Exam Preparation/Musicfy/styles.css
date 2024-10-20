@@ -171,7 +171,6 @@ main {
 .comparison {
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   background-color: #cccbcb;
@@ -196,4 +195,11 @@ main {
 }
 .compareRow:nth-of-type(even) {
   background-color: #81d8a0;
+}
+footer {
+  margin-top: 80px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
 }
