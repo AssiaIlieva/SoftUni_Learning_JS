@@ -46,4 +46,24 @@
     max-width: initial;
     margin: 0;
   }
+  .home-header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 30px;
+  }
+  .home-container01 {
+    width: 100%;
+  }
+  .home-container02 {
+    flex-direction: column;
+  }
+  .navigation-links-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .navigation-links-nav span {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
 }
