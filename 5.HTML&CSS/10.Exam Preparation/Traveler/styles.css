@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+h1,
+h2,
+blockquote {
+  font-family: 'Cormorant Infant';
+}
+p,
+a,
+h4 {
+  font-family: 'Karla';
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+.top-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url('/images/poster.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.overlay {
+  position: absolute; /* Позволява на overlay да покрие целия родител */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    14,
+    13,
+    13,
+    0.5
+  ); /* Затъмняващ филтър (черен с 50% прозрачност) */
+  z-index: 1; /* Уверява, че елементът е над фона */
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px 0 100px;
+  z-index: 2;
+}
+header > a:first-child {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background: url('/images/logo.webp') no-repeat center;
+  background-size: contain;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  padding-right: 30px;
+}
+
+header li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+.hero-section {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.hero-section h1 {
+  font-size: 90px;
+  color: white;
+  margin-top: 230px;
+  margin-bottom: 150px;
+  z-index: 2;
+}
+
+.hero-section p {
+  color: white;
+  font-size: 18px;
+  max-width: 550px;
+  margin: auto;
+  z-index: 2;
+}
+.testimonial-section {
+  max-width: 100%;
+  height: 580px;
+  background-color: #f8f0e9;
+  padding-left: 300px;
+  padding-top: 55px;
+}
+.testimonial-section p {
+  font-size: 18px;
+  padding-bottom: 90px;
+  color: #352b2a;
+}
+.testimonial-section blockquote {
+  font-size: 68px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 0.8;
+  color: #352b2a;
+  width: 1030px;
+}
+.support {
+  max-width: 100%;
+  height: 320px;
+  background-color: #e14747;
+  color: #f8f0e9;
+  font-size: 18px;
+  text-align: center;
+  padding: 100px 0;
+}
+.support h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.support p {
+  width: 250px;
+  margin: auto;
+}
+.articles {
+  background-color: #f8f0e9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+}
+.articles article {
+  flex: 0 1 auto;
+  width: 50%;
+  height: auto;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.article-picture {
+  flex: 0 1 auto;
+  width: 100%;
+  height: auto;
+}
+.article-picture img {
+  width: 100%;
+  height: auto;
+}
+.article-content h2 {
+  color: #352b2a;
+  font-size: 50px;
+  text-align: center;
+  padding: 40px 250px;
+}
+.article-content p {
+  font-size: 16px;
+  padding: 10px 250px;
+  color: #463c3b;
+}
+.article-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px; /* Разстояние между линковете */
+}
+
+.article-nav a {
+  display: inline-block; /* Линковете ще заемат ширината на текста */
+  color: #352b2a;
+  border: 1px solid #352b2a;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #fffcfa;
+}
+
+.article-nav a:nth-child(2) {
+  margin: 20px auto;
+}
+.find {
+  max-width: 100%;
+  height: 580px;
+  background-color: #e14747;
+  color: #f8f0e9;
+  font-size: 18px;
+  text-align: center;
+  padding: 150px 0;
+}
+.find h2 {
+  font-size: 50px;
+  color: #f8f0e9;
+  margin-bottom: 120px;
+}
+.find p {
+  font-size: 18px;
+  color: #f8f0e9;
+  width: 850px;
+  line-height: 1.5;
+  padding-bottom: 80px;
+  margin: auto;
+}
+.find a {
+  color: #352b2a;
+  padding: 15px 25px;
+  border-radius: 30px;
+  background-color: #fad87a;
+}
+footer {
+  width: 100%;
+  height: 310px;
+  background-color: #352b2a;
+  padding-left: 80px;
+}
+footer a {
+  padding: 80px 0;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: url('/images/logo.webp') no-repeat center;
+  background-size: contain;
+}
+footer p {
+  color: #f8f0e9;
+  line-height: 1.5;
+  width: 450px;
+  font-weight: bold;
+}
+footer p:nth-child(3) {
+  color: #4e4140;
+  font-size: 18px;
+  padding-top: 30px;
+  font-weight: bold;
+}
